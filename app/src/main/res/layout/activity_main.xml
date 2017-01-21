@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="12dp"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="12dp"
+    android:background="@drawable/fondoprincipal"
+    tools:context="com.android.curricnacional.MainActivity"
+    android:stretchColumns="*"
+    android:shrinkColumns="*">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow>
+
+            <TextView
+                android:text="Perfiles de\negreso"
+                android:gravity="center_vertical"
+                android:layout_height="100dp"
+                android:textColor="#FFFFFF"/>
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/perfil"
+                android:background="@drawable/btn_circle"
+                android:onClick="vistaperfiles"
+                android:id="@+id/botonPerfilegreso" />
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/vision"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/botonenfoques"/>
+            <TextView
+                android:text="Enfoques\ntrans-\nversales"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Compe-\ntencias y\ncapacida-\ndes"
+                android:gravity="center_vertical"
+                android:layout_height="100dp"
+                android:textColor="#FFFFFF"/>
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/brain"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/botoncompetencias"/>
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/briefcase"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/botonplanes"/>
+            <TextView
+                android:text="Planes de\nestudio"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:text="Desarrollo\nde com-\npetencias"
+                android:gravity="center_vertical"
+                android:layout_height="100dp"
+                android:textColor="#FFFFFF"/>
+
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/perfiles"
+                android:id="@+id/botonprocesos"
+                android:background="@drawable/btn_circle" />
+
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/checklist"
+                android:id="@+id/botonevaluacion"
+                android:background="@drawable/btn_circle" />
+            <TextView
+                android:text="Evalua-\nción de ca-\npacidades"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:text="Diversifi-\ncación\ncurricular"
+                android:layout_gravity="center_vertical"
+                android:textColor="#FFFFFF"/>
+
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/pencil"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/botondiverso" />
+            <ImageButton android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/letter"
+                android:background="@drawable/btn_circle"
+                android:id="@+id/botonmensaje"/>
+            <TextView
+                android:text="Contacto"
+                android:gravity="center_vertical"
+                android:layout_height="100dp"
+                android:textColor="#FFFFFF"/>
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

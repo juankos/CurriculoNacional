@@ -1,0 +1,121 @@
+package com.android.curricnacional;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.ActionBarActivity;
+
+/**
+ * Created by Juan on 18/01/2017.
+ */
+
+public class MainEvaluacion extends ActionBarActivity implements ActionBar.TabListener, ViewPager.OnPageChangeListener{
+
+    private ViewPager vista;
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.evaluacion_main);
+
+        Adaptador pa = new Adaptador(getSupportFragmentManager());
+        vista = (ViewPager)findViewById(R.id.vista);
+        vista.setAdapter(pa);
+
+        vista.setOnPageChangeListener(this);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("Evaluación de competencias");
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+
+        ActionBar.Tab tab = actionBar.newTab().setText("Competencia por evaluar").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Analizar el estándar").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Diseñar situaciones").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Los criterios de evaluación").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Comunicar resultados").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Valorar desempeños").setTabListener(this);
+        actionBar.addTab (tab);
+
+        tab = actionBar.newTab().setText("Retroacción de la evaluación").setTabListener(this);
+        actionBar.addTab (tab);
+
+    }
+    public class Adaptador extends FragmentPagerAdapter {
+        public Adaptador (FragmentManager fm){
+            super (fm);
+        }
+        public Fragment getItem(int arg0) {
+            switch (arg0) {
+                case 0:
+                    return new Evaluacion1();
+                case 1:
+                    return new Evaluacion2();
+                case 2:
+                    return new Evaluacion3();
+                case 3:
+                    return new Evaluacion4();
+                case 4:
+                    return new Evaluacion5();
+                case 5:
+                    return new Evaluacion6();
+                case 6:
+                    return new Evaluacion7();
+
+                default:
+
+                    return null;
+            }
+        }
+
+        public int getCount(){
+            return 7;
+        }
+    }
+
+    @Override
+    public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
+        vista.setCurrentItem(tab.getPosition());
+
+    }
+
+    @Override
+    public void onTabUnselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+    }
+
+    @Override
+    public void onTabReselected(ActionBar.Tab tab, FragmentTransaction ft) {
+
+    }
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+    }
+
+    @Override
+    public void onPageSelected(int i) {
+        getSupportActionBar().setSelectedNavigationItem(i);
+
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+
+    }
+}

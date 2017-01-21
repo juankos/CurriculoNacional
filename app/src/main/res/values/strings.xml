@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Curriculo Nacional</string>
+
+    <string name="c0"></string>
+
+    <string name="c1">PLAN DE ESTUDIOS NIVEL INICIAL</string>
+    <string name="c2">I</string>
+    <string name="c3">II</string>
+    <string name="c4">0 - 2</string>
+    <string name="c5">3 - 5</string>
+    <string name="c6">Comunicación</string>
+    <string name="c7">Comunicación</string>
+    <string name="c8">-</string>
+    <string name="c9">Castellano como\nsegunda lengua</string>
+    <string name="c10">Personal social</string>
+    <string name="c11">Personal social</string>
+    <string name="c12">Psicomotriz</string>
+    <string name="c13">Psicomotriz</string>
+    <string name="c14">Descubrimiento\ndel mundo</string>
+    <string name="c15">Ciencia y\ntecnología</string>
+    <string name="c16">-</string>
+    <string name="c17">Matemáticas</string>
+    <string name="c18">Tutoría y orientación educativa</string>
+
+    <string name="p1">PLAN DE ESTUDIOS NIVEL PRIMARIA</string>
+    <string name="p2">III</string>
+    <string name="p3">IV</string>
+    <string name="p4">V</string>
+    <string name="p5">1°</string>
+    <string name="p6">2°</string>
+    <string name="p7">3°</string>
+    <string name="p8">4°</string>
+    <string name="p9">5°</string>
+    <string name="p10">6°</string>
+    <string name="p11">Comunicación</string>
+    <string name="p12">Castellano como segunda lengua</string>
+    <string name="p13">Inglés</string>
+    <string name="p14">Arte y cultura</string>
+    <string name="p15">Personal social</string>
+    <string name="p16">Educación religiosa</string>
+    <string name="p17">Educación física</string>
+    <string name="p18">Ciencia y tecnología</string>
+    <string name="p19">Matemática</string>
+
+    <string name="s1">PLAN DE ESTUDIOS DEL NIVEL SECUNDARIO</string>
+    <string name="s2">VI</string>
+    <string name="s3">VII</string>
+
+    <string name="s4">1°</string>
+    <string name="s5">2°</string>
+    <string name="s6">3°</string>
+    <string name="s7">4°</string>
+    <string name="s8">5°</string>
+
+    <string name="s9">Comunicación</string>
+    <string name="s10">Castellano como segunda lengua</string>
+    <string name="s11">Inglés</string>
+    <string name="s12">Arte y cultura</string>
+    <string name="s13">Desarrollo persona, ciudadanía y cívica</string>
+    <string name="s14">Ciencias sociales</string>
+    <string name="s15">Educación religiosa</string>
+    <string name="s16">Educación física</string>
+    <string name="s17">Ciencia y tecnología</string>
+    <string name="s18">Educación para el trabajo</string>
+    <string name="s19">Matemática</string>
+
+
+</resources>
